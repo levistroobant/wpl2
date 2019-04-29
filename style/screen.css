@@ -1,0 +1,42 @@
+body {
+    background-color: yellow
+}
+
+#container {
+    background-color: aqua;
+}
+
+aside {
+    background-color: blue;
+}
+
+main {
+    background-color: honeydew;
+}
+
+main>header {
+    background-color: hotpink;
+}
+
+/*main>section*/
+
+#content {
+    background-color: lightcoral;
+}
+
+#content>header {
+    background-color: lawngreen;
+}
+
+#content>div.scrolledsmall {
+    background-color: lightskyblue;
+    display: none;
+}
+
+#bevat article {
+    background-color: orange;
+}
+
+footer {
+    background-color: azure
+}
