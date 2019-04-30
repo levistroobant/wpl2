@@ -139,9 +139,12 @@ main>header a:hover {
     background-color: lightcoral;
 }
 
+/* big header*/
 #content>header {
-    background-color: lawngreen;
+    background-color: var(--main-dark-color);
+    color:var(--main-lightdark-color)
 }
+/* end big header*/
 
 /* scolled header */
 
