@@ -66,9 +66,37 @@ main {
     background-color: honeydew;
 }
 
+/* main header*/
+
 main>header {
-    background-color: hotpink;
+    background-color: var(--main-dark-color);
+    background: linear-gradient(to bottom, #7a7a7a 0%, #2c2c2c 100%);
+    color: var(--main-lightdark-color);
+    height: 50px;
 }
+
+main>header>div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+main>header form {
+    display: inline;
+}
+
+main>header img {
+    height: 2rem;
+}
+
+main>header a {
+    color: var(--main-lightdark-color)
+}
+
+main>header a:hover {
+    color: var(--main-lightpure-color)
+}
+
+/*end main header*/
 
 /*main>section*/
 
