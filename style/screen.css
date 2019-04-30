@@ -66,9 +66,36 @@ main {
     background-color: honeydew;
 }
 
+/* main header*/
+
 main>header {
-    background-color: hotpink;
+    background-color: var(--main-dark-color);
+    color: var(--main-lightdark-color);
+    height: 50px;
 }
+
+main>header>div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+main>header form {
+    display: inline;
+}
+
+main>header img {
+    height: 2rem;
+}
+
+main>header a {
+    color: var(--main-lightdark-color)
+}
+
+main>header a:hover {
+    color: var(--main-lightpure-color)
+}
+
+/*end main header*/
 
 /*main>section*/
 
