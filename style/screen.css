@@ -9,6 +9,41 @@
     --main-darkerdark-color: #202020;
 }
 
+.btn {
+    border: solid thin var(--main-lightdark-color);
+    color: var(--main-accent-color);
+    height: 2.5rem;
+    border-radius: 1.25rem;
+}
+
+.btn:hover {
+    color: var(--main-lightdark-color);
+}
+
+.btn.solid {
+    border: solid thin var(--main-accent-color);
+    background-color: var(--main-accent-color);
+    color: var(--main-lightdark-color);
+}
+
+.btn.solid:hover {
+    border: solid thin var(--main-lightdark-color);
+    color: var(--main-accent-color);
+    background-color: var(--main-dark-color)
+}
+
+.btn.more {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--main-lightdark-color);
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
 /* end variable*/
 
 body {
@@ -108,10 +143,23 @@ main>header a:hover {
     background-color: lawngreen;
 }
 
+/* scolled header */
+
 #content>div.scrolledsmall {
-    background-color: lightskyblue;
+    background-color: var(--main-dark-color);
     display: none;
 }
+
+#content>div.scrolledsmall>div.row>div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#content>div.scrolledsmall h1 {
+    color: var(--main-lightdark-color);
+}
+
+/*end scrolled header*/
 
 #bevat article {
     background-color: orange;
