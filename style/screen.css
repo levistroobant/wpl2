@@ -166,7 +166,7 @@ main > header a:hover {
 
 /* overzicht van "covers" of "moods"*/
 #bevat article {
-  background-color:var(--main-dark-color)
+  background-color: var(--main-dark-color);
 }
 #bevat.catalogus {
   padding-top: 1rem;
@@ -177,11 +177,11 @@ main > header a:hover {
 #bevat.catalogus article header {
   position: relative;
 }
-#bevat.catalogus article footer{
-    background-color: var(--main-dark-color);
+#bevat.catalogus article footer {
+  background-color: var(--main-dark-color);
 }
 #bevat.catalogus article > div.infocard {
-    color: var(--main-lightpure-color);
+  color: var(--main-lightpure-color);
 }
 #bevat.catalogus article > div.infocard > h1 {
   font-size: 1rem;
@@ -196,7 +196,6 @@ main > header a:hover {
   margin-top: 0.5rem;
 }
 #bevat.catalogus article .overlay {
- 
   position: absolute;
   top: 0px;
   left: 0px;
@@ -210,7 +209,6 @@ main > header a:hover {
 }
 
 #bevat.catalogus article .overlay .ctrl {
-  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -228,7 +226,56 @@ main > header a:hover {
 }
 
 /* end overzicht van "covers" of "moods"*/
-
+/* start footer */
 footer {
-  background-color: azure;
+  background-color: var(--main-dark-color);
 }
+
+#nav_playing img {
+  padding: 1rem;
+}
+#nav_playing .songtitle {
+  color: var(--main-lightpure-color);
+}
+#nav_playing .artiest {
+  color: var(--main-lightdark-color);
+}
+#nav_ctrl{
+  color: var(--main-lightpure-color);
+}
+/* end footer*/
+
+/* playbar*/
+.playbar {
+  width: 100%;
+  height: 4px;
+  background-color: hotpink;
+  border-radius: 2px;
+  position: relative;
+}
+.playbar > .currentposbar {
+  height: 100%;
+  width: 40%;
+  background-color: var(--main-lightpure-color);
+  border-radius: 2px;
+  transition: ease 0.2s;
+}
+.playbar > .currentpos {
+  height: 100%;
+  width: 4px;
+  border-radius: 2px;
+  background-color:var(--main-darklight-color);
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  transition: ease 0.1s;
+}
+.playbar:hover > .currentpos {
+  visibility: visible;
+}
+.playbar:hover > .currentposbar {
+  background-color: var(--main-accent-color);
+}
+/*end playbar*/
