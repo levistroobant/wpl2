@@ -1,134 +1,134 @@
 /* variable aanmaken*/
 
 :root {
-    --main-accent-color: #1ED760;
-    --main-lightdark-color: #D8D8D8;
-    --main-lightpure-color: #FFF;
-    --main-darklight-color: #3D3D3D;
-    --main-dark-color: #2C2C2C;
-    --main-darkerdark-color: #202020;
+  --main-accent-color: #1ed760;
+  --main-lightdark-color: #d8d8d8;
+  --main-lightpure-color: #fff;
+  --main-darklight-color: #3d3d3d;
+  --main-dark-color: #2c2c2c;
+  --main-darkerdark-color: #202020;
 }
 
 .btn {
-    border: solid thin var(--main-lightdark-color);
-    color: var(--main-accent-color);
-    height: 2.5rem;
-    border-radius: 1.25rem;
+  border: solid thin var(--main-lightdark-color);
+  color: var(--main-accent-color);
+  height: 2.5rem;
+  border-radius: 1.25rem;
 }
 
 .btn:hover {
-    color: var(--main-lightdark-color);
+  color: var(--main-lightdark-color);
 }
 
 .btn.solid {
-    border: solid thin var(--main-accent-color);
-    background-color: var(--main-accent-color);
-    color: var(--main-lightdark-color);
+  border: solid thin var(--main-accent-color);
+  background-color: var(--main-accent-color);
+  color: var(--main-lightdark-color);
 }
 
 .btn.solid:hover {
-    border: solid thin var(--main-lightdark-color);
-    color: var(--main-accent-color);
-    background-color: var(--main-dark-color)
+  border: solid thin var(--main-lightdark-color);
+  color: var(--main-accent-color);
+  background-color: var(--main-dark-color);
 }
 
 .btn.more {
-    height: 2.5rem;
-    width: 2.5rem;
-    padding: 0.5rem;
-    border-radius: 50%;
-    color: var(--main-lightdark-color);
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--main-lightdark-color);
 }
 
 .btn:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 /* end variable*/
 
 body {
-    background-color: yellow;
-    font-family: "Montserrat", sans-serif;
+  background-color: yellow;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #container {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 /* aside navigatie*/
 
 aside {
-    background-color: var(--main-darkerdark-color);
-    color: var(--main-lightdark-color);
-    padding-top: 1rem;
+  background-color: var(--main-darkerdark-color);
+  color: var(--main-lightdark-color);
+  padding-top: 1rem;
 }
 
 aside h1 {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    margin-top: 2rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
 }
 
 aside li {
-    text-transform: capitalize;
-    margin-bottom: 0.5rem;
-    position: relative;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  position: relative;
 }
 
-aside li>a {
-    color: var(--main-lightdark-color);
-    display: block;
+aside li > a {
+  color: var(--main-lightdark-color);
+  display: block;
 }
 
 aside li.active {
-    border-left: solid 0.3rem var(--main-accent-color);
-    left: -1rem;
-    padding-left: 0.7rem;
+  border-left: solid 0.3rem var(--main-accent-color);
+  left: -1rem;
+  padding-left: 0.7rem;
 }
 
 aside li.active a {
-    color: var(--main-lightpure-color);
+  color: var(--main-lightpure-color);
 }
 
-aside li>a:hover {
-    color: var(--main-lightpure-color);
-    text-decoration: none;
+aside li > a:hover {
+  color: var(--main-lightpure-color);
+  text-decoration: none;
 }
 
 /* end aside*/
 
 main {
-    background-color: honeydew;
+  background-color: honeydew;
 }
 
 /* main header*/
 
-main>header {
-    background-color: var(--main-dark-color);
-    background: linear-gradient(to bottom, #7a7a7a 0%, #2c2c2c 100%);
-    color: var(--main-lightdark-color);
-    height: 50px;
+main > header {
+  background-color: var(--main-dark-color);
+  background: linear-gradient(to bottom, #7a7a7a 0%, #2c2c2c 100%);
+  color: var(--main-lightdark-color);
+  height: 50px;
 }
 
-main>header>div {
-    margin-top: auto;
-    margin-bottom: auto;
+main > header > div {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-main>header form {
-    display: inline;
+main > header form {
+  display: inline;
 }
 
-main>header img {
-    height: 2rem;
+main > header img {
+  height: 2rem;
 }
 
-main>header a {
-    color: var(--main-lightdark-color)
+main > header a {
+  color: var(--main-lightdark-color);
 }
 
-main>header a:hover {
-    color: var(--main-lightpure-color)
+main > header a:hover {
+  color: var(--main-lightpure-color);
 }
 
 /*end main header*/
@@ -136,38 +136,58 @@ main>header a:hover {
 /*main>section*/
 
 #content {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 /* big header*/
-#content>header {
-    background-color: var(--main-dark-color);
-    color:var(--main-lightdark-color)
+#content > header {
+  background-color: var(--main-dark-color);
+  color: var(--main-lightdark-color);
 }
 /* end big header*/
 
 /* scolled header */
 
-#content>div.scrolledsmall {
-    background-color: var(--main-dark-color);
-    display: none;
+#content > div.scrolledsmall {
+  background-color: var(--main-dark-color);
+  display: none;
 }
 
-#content>div.scrolledsmall>div.row>div {
-    margin-top: auto;
-    margin-bottom: auto;
+#content > div.scrolledsmall > div.row > div {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-#content>div.scrolledsmall h1 {
-    color: var(--main-lightdark-color);
+#content > div.scrolledsmall h1 {
+  color: var(--main-lightdark-color);
 }
 
 /*end scrolled header*/
 
+/* overzicht van "covers" of "moods"*/
 #bevat article {
-    background-color: orange;
+  background-color: orange;
 }
+#bevat.catalogus {
+  padding-top: 1rem;
+}
+#bevat.catalogus article {
+  padding-bottom: 0.75rem;
+}
+#bevat.catalogus article > div.infocard > h1 {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  text-transform: capitalize;
+  color: var(--main-lightpure-color);
+}
+#bevat.catalogus article > div.infocard > footer {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-top: 0.5rem;
+}
+/* end overzicht van "covers" of "moods"*/
 
 footer {
-    background-color: azure
+  background-color: azure;
 }
