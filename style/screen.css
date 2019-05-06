@@ -166,7 +166,7 @@ main > header a:hover {
 
 /* overzicht van "covers" of "moods"*/
 #bevat article {
-  background-color:var(--main-dark-color)
+  background-color: var(--main-dark-color);
 }
 #bevat.catalogus {
   padding-top: 1rem;
@@ -177,11 +177,11 @@ main > header a:hover {
 #bevat.catalogus article header {
   position: relative;
 }
-#bevat.catalogus article footer{
-    background-color: var(--main-dark-color);
+#bevat.catalogus article footer {
+  background-color: var(--main-dark-color);
 }
 #bevat.catalogus article > div.infocard {
-    color: var(--main-lightpure-color);
+  color: var(--main-lightpure-color);
 }
 #bevat.catalogus article > div.infocard > h1 {
   font-size: 1rem;
@@ -196,7 +196,6 @@ main > header a:hover {
   margin-top: 0.5rem;
 }
 #bevat.catalogus article .overlay {
- 
   position: absolute;
   top: 0px;
   left: 0px;
@@ -210,7 +209,6 @@ main > header a:hover {
 }
 
 #bevat.catalogus article .overlay .ctrl {
-  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -228,7 +226,9 @@ main > header a:hover {
 }
 
 /* end overzicht van "covers" of "moods"*/
-
+/* start footer */
 footer {
   background-color: azure;
 }
+
+/* end footer*/
