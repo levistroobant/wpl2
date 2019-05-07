@@ -163,6 +163,14 @@ main>header a:hover {
 
 /* scolled header */
 
+#content.isscrolled div.scrolledsmall {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  z-index: 6004;
+}
+
 #content>div.scrolledsmall {
   background-color: var(--main-dark-color);
   display: none;
@@ -318,3 +326,23 @@ footer {
 }
 
 /*end playbar*/
+
+/*start table view*/
+
+.tabelview thead {text-transform: uppercase; font-size: 0.75rem; color:var(--main-lightpure-color)}
+.tabelview thead i {font-size: 1rem}
+.tabelview tbody{color:var(--main-lightpure-color)}
+.tabelview tbody tr > td.play_status{text-align: center}
+.tabelview tbody tr > td.play_status > i {    display: none;}
+.tabelview tbody tr > td.play_status > i:hover {   transform: scale(1.5)}
+.tabelview tbody tr.current {color: var(--main-accent-color)}
+.tabelview tbody tr.current > td > i {color: var(--main-lightpure-color)}
+.tabelview tbody tr.current > td.play_status > i.fa-play-circle {display: block}
+
+
+.tabelview tbody tr:hover {background-color: var(--main-darklight-color)}
+.tabelview tbody tr:hover > td.play_status > i.fa-play-circle{display:block;}
+
+.tabelview tbody tr.current:hover > td.play_status > i.fa-pause-circle{display:inline; }
+.tabelview tbody tr.current:hover > td.play_status > i.fa-play-circle{display:none;}
+/*end table view*/
