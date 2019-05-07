@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet" />
     <link rel="stylesheet" href="style/screen.css" />
   </head>
-  <body class="container-fluid">
-    <div id="container" class="row">
-      <aside class="col-2">
+  <body class="container-fluid h-100">
+    <div id="container" class="row h-100">
+      <aside class="col-2 h-100">
         <nav>
           <ul class="list-unstyled">
             <li><a href="#">Browse</a></li>
@@ -40,8 +40,8 @@
           </ul>
         </nav>
       </aside>
-      <main class="col-10">
-        <header class="row">
+      <main class="col-10 h-100">
+        <header class="row schaduw">
           <div class="col-6">
             <i class="fas fa-chevron-left"></i>
             <i class="fas fa-chevron-right"></i>
@@ -280,44 +280,22 @@
                   </footer>
                 </div>
               </article>
-              <article class="col-3">
-                <header>
-                  <img src="images/placeholder.png" alt="cover" class="img-fluid" />
-                  <div class="overlay">
-                    <div class="ctrl">
-                      <i class="fas fa-plus"></i>
-                      <i class="fas fa-play"></i>
-                      <i class="fas fa-ellipsis-h"></i>
-                    </div>
-                  </div>
-                </header>
-                <div class="infocard">
-                  <h1>item mood 1</h1>
-                  <section>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim libero amet,
-                  </section>
-                  <footer>
-                    12343423 followers
-                  </footer>
-                </div>
-              </article>
             </div>
           </section>
         </section>
       </main>
     </div>
-    <footer class="row">
+    <footer class="row fixed-bottom">
       <section class="col-3" id="nav_playing">
         <div class="row">
           <div class="col-4">
-            <img src="images/placeholder.png" class="img-fluid" alt="now playing">
+            <img src="images/placeholder.png" class="img-fluid" alt="now playing" />
           </div>
           <div class="col-8 m-auto">
             <section class="infoplaying">
               <div class="songtitle">Title</div>
               <div class="artiest">artiest</div>
             </section>
-
           </div>
         </div>
       </section>
@@ -337,11 +315,10 @@
         <div class="row">
           <div class="col-4"></div>
           <div class="col-5 m-auto">
-
-              <div class="playbar">
-                  <div class="currentposbar"></div>
-                  <div class="currentpos"></div>
-                </div>
+            <div class="playbar">
+              <div class="currentposbar"></div>
+              <div class="currentpos"></div>
+            </div>
           </div>
           <div class="col-3"></div>
         </div>
