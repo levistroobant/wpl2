@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet" />
     <link rel="stylesheet" href="style/screen.css" />
   </head>
-  <body class="container-fluid">
-    <div id="container" class="row">
-      <aside class="col-2">
+  <body class="container-fluid h-100">
+    <div id="container" class="row h-100">
+      <aside class="col-2 h-100">
         <nav>
           <ul class="list-unstyled">
             <li><a href="#">Browse</a></li>
@@ -40,7 +40,7 @@
           </ul>
         </nav>
       </aside>
-      <main class="col-10">
+      <main class="col-10 h-100">
         <header class="row">
           <div class="col-6">
             <i class="fas fa-chevron-left"></i>
@@ -91,7 +91,7 @@
           </div>
           <section class="col-12 catalogus" id="bevat">
             <div class="row">
-              <article class="col-3">
+              <article class="col-sm-6 col-md-4 col-lg-3">
                 <header>
                   <img src="images/placeholder.png" alt="cover" class="img-fluid" />
                   <div class="overlay">
@@ -112,7 +112,7 @@
                   </footer>
                 </div>
               </article>
-              <article class="col-3">
+              <article class="col-sm-6  col-md-4  col-lg-3">
                 <header>
                   <img src="images/placeholder.png" alt="cover" class="img-fluid" />
                   <div class="overlay">
@@ -133,7 +133,7 @@
                   </footer>
                 </div>
               </article>
-              <article class="col-3">
+              <article class="col-sm-6  col-md-4  col-lg-3">
                 <header>
                   <img src="images/placeholder.png" alt="cover" class="img-fluid" />
                   <div class="overlay">
@@ -154,7 +154,7 @@
                   </footer>
                 </div>
               </article>
-              <article class="col-3">
+              <article class="col-sm-6  col-md-4  col-lg-3">
                 <header>
                   <img src="images/placeholder.png" alt="cover" class="img-fluid" />
                   <div class="overlay">
@@ -175,7 +175,7 @@
                   </footer>
                 </div>
               </article>
-              <article class="col-3">
+              <article class="col-sm-6  col-md-4  col-lg-3">
                 <header>
                   <img src="images/placeholder.png" alt="cover" class="img-fluid" />
                   <div class="overlay">
@@ -196,27 +196,9 @@
                   </footer>
                 </div>
               </article>
-              <article class="col-3">
-                <header>
-                  <img src="images/placeholder.png" alt="cover" class="img-fluid" />
-                  <div class="overlay">
-                    <div class="ctrl">
-                      <i class="fas fa-plus"></i>
-                      <i class="fas fa-play"></i>
-                      <i class="fas fa-ellipsis-h"></i>
-                    </div>
-                  </div>
-                </header>
-                <div class="infocard">
-                  <h1>item mood 1</h1>
-                  <section>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim libero amet,
-                  </section>
-                  <footer>
-                    12343423 followers
-                  </footer>
-                </div>
-              </article>
+
+
+              
               <article class="col-3">
                 <header>
                   <img src="images/placeholder.png" alt="cover" class="img-fluid" />
@@ -306,18 +288,17 @@
         </section>
       </main>
     </div>
-    <footer class="row">
+    <footer class="row fixed-bottom">
       <section class="col-3" id="nav_playing">
         <div class="row">
           <div class="col-4">
-            <img src="images/placeholder.png" class="img-fluid" alt="now playing">
+            <img src="images/placeholder.png" class="img-fluid" alt="now playing" />
           </div>
           <div class="col-8 m-auto">
             <section class="infoplaying">
               <div class="songtitle">Title</div>
               <div class="artiest">artiest</div>
             </section>
-
           </div>
         </div>
       </section>
@@ -337,11 +318,10 @@
         <div class="row">
           <div class="col-4"></div>
           <div class="col-5 m-auto">
-
-              <div class="playbar">
-                  <div class="currentposbar"></div>
-                  <div class="currentpos"></div>
-                </div>
+            <div class="playbar">
+              <div class="currentposbar"></div>
+              <div class="currentpos"></div>
+            </div>
           </div>
           <div class="col-3"></div>
         </div>
@@ -351,5 +331,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts/scrollen.js"></script>
   </body>
 </html>

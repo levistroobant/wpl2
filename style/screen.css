@@ -46,6 +46,10 @@
 
 /* end variable*/
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: yellow;
   font-family: 'Montserrat', sans-serif;
@@ -61,6 +65,7 @@ aside {
   background-color: var(--main-darkerdark-color);
   color: var(--main-lightdark-color);
   padding-top: 1rem;
+  z-index: 6001;
 }
 
 aside h1 {
@@ -75,7 +80,7 @@ aside li {
   position: relative;
 }
 
-aside li > a {
+aside li>a {
   color: var(--main-lightdark-color);
   display: block;
 }
@@ -90,7 +95,7 @@ aside li.active a {
   color: var(--main-lightpure-color);
 }
 
-aside li > a:hover {
+aside li>a:hover {
   color: var(--main-lightpure-color);
   text-decoration: none;
 }
@@ -103,31 +108,37 @@ main {
 
 /* main header*/
 
-main > header {
+main>header {
   background-color: var(--main-dark-color);
   background: linear-gradient(to bottom, #7a7a7a 0%, #2c2c2c 100%);
   color: var(--main-lightdark-color);
   height: 50px;
 }
 
-main > header > div {
+main>header.schaduw {
+  box-shadow: 0px 17px 20px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  z-index: 6000;
+}
+
+main>header>div {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-main > header form {
+main>header form {
   display: inline;
 }
 
-main > header img {
+main>header img {
   height: 2rem;
 }
 
-main > header a {
+main>header a {
   color: var(--main-lightdark-color);
 }
 
-main > header a:hover {
+main>header a:hover {
   color: var(--main-lightpure-color);
 }
 
@@ -137,64 +148,85 @@ main > header a:hover {
 
 #content {
   background-color: var(--main-dark-color);
+  overflow: auto;
+  height: calc(100% - 50px - 79px);
 }
 
 /* big header*/
-#content > header {
+
+#content>header {
   background-color: var(--main-dark-color);
   color: var(--main-lightdark-color);
 }
+
 /* end big header*/
 
 /* scolled header */
 
-#content > div.scrolledsmall {
+#content.isscrolled div.scrolledsmall {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  z-index: 6004;
+}
+
+#content>div.scrolledsmall {
   background-color: var(--main-dark-color);
   display: none;
 }
 
-#content > div.scrolledsmall > div.row > div {
+#content>div.scrolledsmall>div.row>div {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-#content > div.scrolledsmall h1 {
+#content>div.scrolledsmall h1 {
   color: var(--main-lightdark-color);
 }
 
 /*end scrolled header*/
 
 /* overzicht van "covers" of "moods"*/
+
 #bevat article {
   background-color: var(--main-dark-color);
 }
+
 #bevat.catalogus {
   padding-top: 1rem;
 }
+
 #bevat.catalogus article {
   padding-bottom: 0.75rem;
 }
+
 #bevat.catalogus article header {
   position: relative;
 }
+
 #bevat.catalogus article footer {
   background-color: var(--main-dark-color);
 }
-#bevat.catalogus article > div.infocard {
+
+#bevat.catalogus article>div.infocard {
   color: var(--main-lightpure-color);
 }
-#bevat.catalogus article > div.infocard > h1 {
+
+#bevat.catalogus article>div.infocard>h1 {
   font-size: 1rem;
   padding-top: 0.5rem;
   text-transform: capitalize;
   color: var(--main-lightpure-color);
 }
-#bevat.catalogus article > div.infocard > footer {
+
+#bevat.catalogus article>div.infocard>footer {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   margin-top: 0.5rem;
 }
+
 #bevat.catalogus article .overlay {
   position: absolute;
   top: 0px;
@@ -204,6 +236,7 @@ main > header a:hover {
   opacity: 0;
   transition: ease 0.4s;
 }
+
 #bevat.catalogus article .overlay:hover {
   opacity: 1;
 }
@@ -215,6 +248,7 @@ main > header a:hover {
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
 }
+
 #bevat.catalogus article .overlay .ctrl .fa-play {
   font-size: 3rem;
   margin-left: 0.5rem;
@@ -226,26 +260,34 @@ main > header a:hover {
 }
 
 /* end overzicht van "covers" of "moods"*/
+
 /* start footer */
+
 footer {
   background-color: var(--main-dark-color);
+  z-index: 6001!important;
 }
 
 #nav_playing img {
   padding: 1rem;
 }
+
 #nav_playing .songtitle {
   color: var(--main-lightpure-color);
 }
+
 #nav_playing .artiest {
   color: var(--main-lightdark-color);
 }
-#nav_ctrl{
+
+#nav_ctrl {
   color: var(--main-lightpure-color);
 }
+
 /* end footer*/
 
 /* playbar*/
+
 .playbar {
   width: 100%;
   height: 4px;
@@ -253,18 +295,20 @@ footer {
   border-radius: 2px;
   position: relative;
 }
-.playbar > .currentposbar {
+
+.playbar>.currentposbar {
   height: 100%;
   width: 40%;
   background-color: var(--main-lightpure-color);
   border-radius: 2px;
   transition: ease 0.2s;
 }
-.playbar > .currentpos {
+
+.playbar>.currentpos {
   height: 100%;
   width: 4px;
   border-radius: 2px;
-  background-color:var(--main-darklight-color);
+  background-color: var(--main-darklight-color);
   position: absolute;
   top: 0px;
   left: 40%;
@@ -272,10 +316,33 @@ footer {
   visibility: hidden;
   transition: ease 0.1s;
 }
-.playbar:hover > .currentpos {
+
+.playbar:hover>.currentpos {
   visibility: visible;
 }
-.playbar:hover > .currentposbar {
+
+.playbar:hover>.currentposbar {
   background-color: var(--main-accent-color);
 }
+
 /*end playbar*/
+
+/*start table view*/
+
+.tabelview thead {text-transform: uppercase; font-size: 0.75rem; color:var(--main-lightpure-color)}
+.tabelview thead i {font-size: 1rem}
+.tabelview tbody{color:var(--main-lightpure-color)}
+.tabelview tbody tr > td.play_status{text-align: center}
+.tabelview tbody tr > td.play_status > i {    display: none;}
+.tabelview tbody tr > td.play_status > i:hover {   transform: scale(1.5)}
+.tabelview tbody tr.current {color: var(--main-accent-color)}
+.tabelview tbody tr.current > td > i {color: var(--main-lightpure-color)}
+.tabelview tbody tr.current > td.play_status > i.fa-play-circle {display: block}
+
+
+.tabelview tbody tr:hover {background-color: var(--main-darklight-color)}
+.tabelview tbody tr:hover > td.play_status > i.fa-play-circle{display:block;}
+
+.tabelview tbody tr.current:hover > td.play_status > i.fa-pause-circle{display:inline; }
+.tabelview tbody tr.current:hover > td.play_status > i.fa-play-circle{display:none;}
+/*end table view*/
