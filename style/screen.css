@@ -68,6 +68,9 @@ aside {
   z-index: 6001;
 }
 
+a {
+  color: var(--main-lightdark-color);
+}
 aside h1 {
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -195,6 +198,7 @@ main>header a:hover {
 
 #bevat.catalogus {
   padding-top: 1rem;
+  margin-bottom: 40px;
 }
 
 #bevat.catalogus article {
@@ -265,6 +269,7 @@ main>header a:hover {
 
 footer {
   background-color: var(--main-dark-color);
+  margin-top: 200px;
   z-index: 6001!important;
 }
 
